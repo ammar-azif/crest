@@ -11,8 +11,11 @@ Download from http://example.com/FIXME.
 An example component declaration and its applications contained within.
 
 ```(let [component (create-component "ComponentX"     ; Component containing 2 applications
+
                                   Protocol/HTTP
+
                                   8111
+
                                   ; app1 has 2 routes
                                   {"/app1" (create-app
                                              (create-router {"/get1" (create-restlet Method/GET fn1)
