@@ -9,16 +9,18 @@ Download from http://example.com/FIXME.
 ## Usage
 
 An example component declaration and its applications contained within.
-
-```(let [component (create-component "ComponentX"     ; Component containing 2 applications
+```
+(let [component (create-component "ComponentX"     ; Component containing 2 applications
 
                                   Protocol/HTTP
 
                                   8111
 
                                   ; app1 has 2 routes
+
                                   {"/app1" (create-app
-                                             (create-router {"/get1" (create-restlet Method/GET fn1)
+
+                                             (create-router {"/get1" (create-restlet Method/GET fn1
                                                              "/get2" (create-restlet Method/GET fn2}))
                                   ; app2 has 1 route
                                    "/app2" (create-app
@@ -27,7 +29,8 @@ An example component declaration and its applications contained within.
   ; client code
   (println (GET "http://localhost:8111/app1/get1")) ; value returned by fn1 will be shown
   (println (GET "http://localhost:8111/app1/get2")) ; value returned by fn2 will be shown
-  (println (GET "http://localhost:8111/app2/get1")) ; value returned by fn3 will be shown```
+  (println (GET "http://localhost:8111/app2/get1")) ; value returned by fn3 will be shown
+```
   
                                           
   
