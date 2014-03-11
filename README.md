@@ -10,20 +10,26 @@ Download from http://example.com/FIXME.
 
 An example component declaration and its applications contained within.
 ```
-(let [component (create-component "ComponentX"     ; Component containing 2 applications
+(ns crest.demo
+ (:import [org.restlet.data Method MediaType]
+          [org.restlet.data Protocol])
+ (:use [crest.core]))
 
+(defn fn1 [request-params request-data]
+   "fn1")
+(defn fn2 [request-params request-data]
+   "fn2")
+(defn fn3 [request-params request-data]
+   "fn3")
+
+(let [component (create-component "ComponentX"     ;Component containing 2 applications
                                   Protocol/HTTP
-
                                   8111
-
-                                  ; app1 has 2 routes
-
-                                  {"/app1" (create-app
-
+                                  {"/app1" (create-app    ; app1 has 2 routes
                                              (create-router {"/get1" (create-restlet Method/GET fn1
                                                              "/get2" (create-restlet Method/GET fn2}))
                                   ; app2 has 1 route
-                                   "/app2" (create-app
+                                   "/app2" (create-app    ; app2 has 1 routes
                                              (create-router {"/get1" (create-restlet Method/GET fn3)}))]
   (.start component)
   ; client code
