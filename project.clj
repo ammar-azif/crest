@@ -10,4 +10,4 @@
                  [org.clojure/data.json "0.2.4"]
                  [ring/ring-core "1.2.1"]]
   :repositories [["maven-restlet" "http://maven.restlet.org"]]
-  :main crest.core)
+  :main crest.demo)
