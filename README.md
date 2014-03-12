@@ -4,7 +4,7 @@ crest is a restlet framework http://restlet.org wrapper written in clojure. Rest
 
 ## Installation
 
-Download from https://github.com/lucialink/chloe.
+Download from https://github.com/lucialink/crest.
 
 ## Usage
 
