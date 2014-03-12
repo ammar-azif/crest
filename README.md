@@ -1,10 +1,10 @@
 # crest
 
-crest is a restlet framework http://restlet.org wrapper written in clojure. Restlet is a framework that supports the REST concepts covering both the client and the server side in a uniform interface. Restlet makes it easy for applications using RESTful service to communicate with each other using this uniform interface. crest adds abstraction on top of restlet api in an attempt to make it easy to use the framework without having to learn much about it.   
+crest is a restlet framework http://restlet.org wrapper written in clojure. Restlet is a framework that supports the REST concepts covering both the client and the server side in a uniform interface. Restlet makes it easy for applications using RESTful service to communicate with each other. crest adds abstraction on top of restlet api in an attempt to make it easy to use the framework without having to learn much about it.   
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Download from https://github.com/lucialink/chloe.
 
 ## Usage
 
